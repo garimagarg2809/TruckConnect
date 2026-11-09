@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TruckConnect - Truck Union</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2>TruckConnect</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#post-load">Post a Load</a>
+            <a href="#available-loads">Available Loads</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <h1>Find Loads. Move Goods. Earn More.</h1>
+
+        <p>
+            Connecting material owners with truck owners
+            for easy and reliable transportation.
+        </p>
+
+        <a href="#post-load" class="btn">Post a Load</a>
+
+        <a href="#available-loads" class="btn">Find Loads</a>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+
+        <h2>Welcome to TruckConnect</h2>
+
+        <p>
+            TruckConnect is a platform where sellers can
+            post transportation requirements and truck
+            owners can find suitable loading opportunities.
+        </p>
+
+    </section>
+
+    <!-- Post Load Section -->
+    <section id="post-load">
+
+        <h2>Post Your Load</h2>
+
+        <p>Enter your material and transportation details.</p>
+
+        <form id="loadForm">
+
+            <input type="text" id="material"
+                placeholder="Material Name" required>
+
+            <input type="text" id="pickup"
+                placeholder="Pickup Location" required>
+
+            <input type="text" id="drop"
+                placeholder="Drop Location" required>
+
+            <label for="date">Pickup Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Pickup Time:</label>
+            <input type="time" id="time" required>
+
+            <input type="number" id="weight"
+                placeholder="Weight in tonnes" min="0.1" step="0.1" required>
+
+            <input type="number" id="budget"
+                placeholder="Transport Budget (₹)" min="1" required>
+
+            <button type="submit" class="btn">
+                Submit Load
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Available Loads Section -->
+    <section id="available-loads">
+
+    <h2>Available Loads</h2>
+
+    <p>
+        Truck owners can explore available loads
+        and choose transportation opportunities.
+    </p>
+
+    <div id="loadsList">
+        <p>No loads available yet.</p>
+    </div>
+
+    <hr>
+
+    <h2>Truck Owner Registration</h2>
+
+    <p>Enter your truck details to submit a transport offer.</p>
+
+    <p id="selectedLoad">
+        Select a load above before submitting your offer.
+    </p>
+    
+    <form id="truckForm">
+
+        <input type="text" id="truckNumber"
+            placeholder="Truck Registration Number" required>
+
+        <input type="number" id="capacity"
+            placeholder="Truck Capacity in Tonnes" min="0.1" step="0.1" required>
+
+        <input type="number" id="offerPrice"
+            placeholder="Your Transport Price (₹)" min="1" required>
+
+        <input type="text" id="driverName"
+            placeholder="Driver Name" required>
+
+        <button type="submit" class="btn">
+            Submit Transport Offer
+        </button>
+
+    </form>
+
+    <div id="offersList"></div>
+
+</section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+
+        <h2>TruckConnect</h2>
+
+        <p>Connecting Loads with Trucks.</p>
+
+        <p>Contact: truckconnect@example.com</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

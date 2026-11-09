@@ -1,0 +1,143 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #102a43;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 26px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Home Banner */
+.hero {
+    background-color: #dceaf7;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #102a43;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #1677c8;
+    color: white;
+    padding: 13px 25px;
+    margin: 8px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: #102a43;
+}
+
+/* Sections */
+.about,
+#post-load,
+#available-loads {
+    background-color: white;
+    margin: 25px auto;
+    padding: 40px;
+    width: 85%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+section h2 {
+    color: #102a43;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* Form */
+#loadForm {
+    max-width: 600px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#loadForm input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#loadForm label {
+    text-align: left;
+    font-weight: bold;
+}
+
+#loadForm button {
+    width: 100%;
+}
+
+/* Load Cards */
+.load-card {
+    background-color: #f4f7fb;
+    border: 1px solid #d5e0eb;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 700px;
+}
+
+.load-card h3 {
+    color: #1677c8;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
